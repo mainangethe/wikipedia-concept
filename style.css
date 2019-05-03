@@ -26,8 +26,11 @@ body {
 
 .container {
   margin: 45px 30px;
+  overflow: hidden;
   display: flex;
   flex-direction: column;
+  position: relative;
+  height: 90%;
 }
 
 button {
@@ -220,3 +223,72 @@ main {
 position: absolute;
 right: 0;
 }
+
+/* Foooter */
+
+footer {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  /* margin-top: 400px; */
+  bottom: 10px;
+  width: 100%;
+  position: absolute;
+}
+.logo-icon {
+  width: 40px; height: 40px;
+  background-color: #3669c9;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer-logo {
+  content: url("images/logo/icon-white.png");
+  width: 25px; height: 25px;
+}
+
+.copyrights-section {
+  width: 250px;
+  padding: 6px;
+  font-size: 10px;
+  margin-left: 20px;
+
+}
+
+.copyright {
+  color: #666;
+  hyphens: none;
+  oveflow: hidden;
+}
+
+.badge-section {
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  width: 350px; height: 60px;
+  position: absolute;
+  right: 0;
+}
+
+.android, .apple {
+  width: 160px; height: 54px;
+  margin: 10px;
+}
+
+.apple {
+  background: url("icons/app-store-badge.png") no-repeat center / contain;
+}
+
+.android {
+  background: url("icons/google-play-badge.png") no-repeat center / 120%;
+  border-radius: 10px;
+}
+
+.badge-section a:link {
+  text-decoration: none;
+  opacity: .8;
+}
+
+.badge-section a:hover { opacity: 1; }
